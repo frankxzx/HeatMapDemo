@@ -14,6 +14,7 @@
 		01058B0D1CE182ED004FD696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01058B0B1CE182ED004FD696 /* LaunchScreen.storyboard */; };
 		01058B171CE1832C004FD696 /* echarts.html in Resources */ = {isa = PBXBuildFile; fileRef = 01058B161CE1832C004FD696 /* echarts.html */; };
 		01058B1B1CE18990004FD696 /* echarts.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 01058B1A1CE18990004FD696 /* echarts.min.js */; };
+		01A292311CE30A4F004B2439 /* ToJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A292301CE30A4F004B2439 /* ToJSONString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		01058B091CE182ED004FD696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01058B0C1CE182ED004FD696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01058B0E1CE182ED004FD696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01058B161CE1832C004FD696 /* echarts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = echarts.html; sourceTree = "<group>"; };
+		01058B161CE1832C004FD696 /* echarts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = echarts.html; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		01058B1A1CE18990004FD696 /* echarts.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = echarts.min.js; sourceTree = "<group>"; };
+		01A292301CE30A4F004B2439 /* ToJSONString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSONString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				01058B161CE1832C004FD696 /* echarts.html */,
 				01058B021CE182EC004FD696 /* AppDelegate.swift */,
 				01058B041CE182EC004FD696 /* ViewController.swift */,
+				01A292301CE30A4F004B2439 /* ToJSONString.swift */,
 				01058B061CE182EC004FD696 /* Main.storyboard */,
 				01058B091CE182ED004FD696 /* Assets.xcassets */,
 				01058B0B1CE182ED004FD696 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01058B051CE182EC004FD696 /* ViewController.swift in Sources */,
+				01A292311CE30A4F004B2439 /* ToJSONString.swift in Sources */,
 				01058B031CE182EC004FD696 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				01058B131CE182ED004FD696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

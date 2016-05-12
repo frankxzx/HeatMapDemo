@@ -5,7 +5,7 @@
             <title>ECharts</title>
             <!-- 引入 echarts.js -->
             <script src="echarts.min.js"></script>
-            </head>
+    </head>
     <body>
         <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
         <div id="main" style="width: 375;height:400px;"></div>
@@ -73,6 +73,39 @@
         
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
-            </script>
+
+        function alterTest(text) {
+            alert(text);
+        }
+
+        function loadChart() {
+            var data1 = [[0,0,5],[0,1,1],[0,2,0]]
+            data1 = data1.map(function (item) {
+                            return [item[1], item[0], item[2] || '-'];
+                            });
+            // 指定图表的配置项和数据
+            var option = {
+                    series: [{
+                     name: 'Punch Card',
+                     type: 'heatmap',
+                     data: data1,
+                     label: {
+                     normal: {
+                     show: true
+                     }
+                     },
+                     itemStyle: {
+                     emphasis: {
+                     shadowBlur: 10,
+                     shadowColor: 'rgba(0, 0, 0, 0.5)'
+                     }
+                     }
+                     }]
+            };
+            
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        }
+</script>
     </body>
 </html>
